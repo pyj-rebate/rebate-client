@@ -12,12 +12,14 @@ public class Main extends Application {
     final static int MIN_WIDTH = 1260;
     final static String TITLE = "核对小工具";
     final static String LOAD_URL = "http://www.baidu.com";
+    final static String TOKEN = "a3dde62ea4afbdce5e75a65e0bfce09f";
 
     @Override
     public void start(Stage stage) {
         Scene scene = new Scene(new Group());
         final WebView browser = new WebView();
         final WebEngine webEngine = browser.getEngine();
+        webEngine.setUserAgent(TOKEN);
         browser.setMinWidth(MIN_WIDTH);
         ScrollPane scrollPane = new ScrollPane();
         scrollPane.setContent(browser);
