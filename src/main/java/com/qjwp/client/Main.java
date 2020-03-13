@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
     final static int MIN_WIDTH = 1260;
     final static String TITLE = "核对小工具";
-    final static String LOAD_URL = "http://www.baidu.com";
+    final static String LOAD_URL = "http://10.110.1.11:8001/";
     final static String TOKEN = "a3dde62ea4afbdce5e75a65e0bfce09f";
 
     @Override
@@ -22,6 +22,8 @@ public class Main extends Application {
         webEngine.setUserAgent(TOKEN);
         browser.setMinWidth(MIN_WIDTH);
         ScrollPane scrollPane = new ScrollPane();
+        scrollPane.setFitToWidth(true);
+        scrollPane.setFitToHeight(true);
         scrollPane.setContent(browser);
         webEngine.load(LOAD_URL);
         scene.setRoot(scrollPane);
