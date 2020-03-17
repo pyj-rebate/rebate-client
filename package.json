@@ -1,0 +1,19 @@
+{
+  "main":"http://222.185.247.222:8888/",
+  "name": "核对小程序",
+  "user-agent": "a3dde62ea4afbdce5e75a65e0bfce09f",
+  "window": {
+    "title": "核对小程序",
+    "icon": "assets/logo.ico",
+    "toolbar": false,
+    "width": 1440,
+    "height": 960,
+    "min_width": 1200,
+    "min_height": 600
+  },
+  "webkit": {
+    "plugin": true,
+    "java": false,
+    "page-cache": false
+  }
+}
